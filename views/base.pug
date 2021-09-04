@@ -1,0 +1,32 @@
+mixin render_panel(active)
+  - 
+    let data = [
+      {default: 'home.png', active: 'home-w.png', link: '/', id: 0},
+      {default: 'projects.png', active: 'projects-w.png', link: '/projects', id: 1},
+      {default: 'books.png', active: 'books-w.png', link: '/experience', id: 2},
+      {default: 'form.png', active: 'form-w.png', link: '/contacts', id: 3}
+    ];
+
+  .panel 
+    .panel__center 
+      each item in data 
+        - const activeItem = active === item.id ? true : false;
+        a(href=`${item.link}`)
+          div(class=`panel__center-item ${activeItem ? 'pannel__center-active' : ''}`)
+            img(src=`images/${activeItem ? item.active : item.default}`, alt="panel_photo") 
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="/js/bundle.css")
+    link(rel="preconnect", href="https://fonts.googleapis.com")
+    link(rel="preconnect", href="https://fonts.gstatic.com", crossorigin)
+    link(href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap", rel="stylesheet")
+    title Portfolio
+  body
+  .container 
+      block content
+  script(src="/js/bundle.js") 

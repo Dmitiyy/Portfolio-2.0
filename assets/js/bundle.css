@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arvo", serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background: #101820;
+}
+
+.panel {
+  width: 80px;
+  height: 100%;
+  background: #F2AA4C;
+  box-shadow: 0px 4px 26px #000;
+  display: flex;
+  align-items: center;
+}
+
+.panel__center {
+  display: flex;
+  flex-direction: column;
+}
+
+.panel__center-item {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.panel__center-item img {
+  width: 45px;
+}
+
+.pannel__center-active {
+  background: #101820;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+}
+.main__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main__text h1 {
+  font-size: 80px;
+  font-weight: bold;
+  color: #fff;
+}
+.main__text p {
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 60px;
+  color: #fff;
+  width: 80%;
+  margin-top: 30px;
+}
+.main__text a {
+  width: 250px;
+  display: block;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65px;
+  background: #F2AA4C;
+  color: #000;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  font-size: 30px;
+  font-family: "Arvo", serif;
+  cursor: pointer;
+  margin-top: 40px;
+  transition: all 0.3s;
+}
+.main__text a:hover {
+  background: #000;
+  color: #F2AA4C;
+}
+.main__photo img {
+  width: 250px;
+  box-shadow: 0px 4px 26px #000;
+}
+.main__links {
+  width: 100%;
+  height: 100px;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.main__links-tube {
+  width: 300px;
+  height: 5px;
+  background: #F2AA4C;
+}
+.main__links-item {
+  width: 40px;
+  height: 40px;
+  background: #F2AA4C;
+  border-radius: 100px;
+  cursor: pointer;
+  margin-left: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+.main__links-item:hover {
+  background: #fff;
+}
+.main__links-item img {
+  width: 35px;
+  margin-left: -1px;
+  margin-top: 1px;
+}
+
+/*# sourceMappingURL=bundle.css.map */

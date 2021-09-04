@@ -1,0 +1,24 @@
+extends base
+
+block content
+  +render_panel(0)
+  .content
+    .main
+      .main__wrap 
+        .main__text 
+          h1 Creating websites
+          p I create websites for entrepreneurs, for small and large tasks. Implement your idea so quickly and without problems, let's get started!
+          a(href='/projects') Start now
+        .main__photo
+          img(src='/images/main_ava.png', alt='main_photo')
+      .main__links 
+        .main__links-tube 
+        a(href='https://www.instagram.com/daptellum.dev/', target='_blank')
+          .main__links-item 
+            img(src="/images/inst.png", alt="instagram")
+        a(href='https://t.me/daptellum', target='_blank')
+          .main__links-item
+            img(src="/images/tel.png", alt="telegram")
+        a(href='https://github.com/Dmitiyy', target='_blank')
+          .main__links-item
+            img(src="/images/git.png", alt="github")
