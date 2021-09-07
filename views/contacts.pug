@@ -1,0 +1,18 @@
+extends base
+
+block content
+  +render_panel(3)
+  .content
+    .contacts 
+      form.contacts__form
+        label(for="name") Name
+        input(type="text", id="name", name="name")
+        label(for="email") Email
+        input(type="email", id="email", name="email")
+        label(for="message") Message
+        textarea(name="message", id="message") 
+        button(type="submit") Submit
+      .contacts__text
+        h2 CONTACT FORM
+        p You can send me your letter and i will answer you soon. For it you have to fill this form. It is totally free.
+        p You don’t have to see the whole staircase, just take the first step. Good luck!
