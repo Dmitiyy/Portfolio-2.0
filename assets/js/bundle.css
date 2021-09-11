@@ -138,6 +138,7 @@ body {
 
 .projects {
   width: 1100px;
+  display: none;
 }
 .projects h2 {
   color: #fff;
@@ -202,6 +203,13 @@ body {
 
 .projects__nav-active {
   border-bottom: 4px solid #F2AA4C;
+}
+
+.projects__loading {
+  display: none;
+}
+.projects__loading img {
+  width: 100px;
 }
 
 .experience {
@@ -285,6 +293,10 @@ body {
   font-size: 20px;
   resize: none;
 }
+.contacts form .wrap__btns {
+  display: flex;
+  align-items: center;
+}
 .contacts form button {
   width: 190px;
   cursor: pointer;
@@ -301,6 +313,13 @@ body {
   font-size: 20px;
   border: none;
   box-shadow: 0px 0px 30px #000000;
+}
+.contacts form p {
+  color: #fff;
+  font-size: 17px;
+  margin-top: 25px;
+  display: none;
+  margin-left: 20px;
 }
 .contacts__text {
   width: 45%;

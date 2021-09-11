@@ -4,15 +4,17 @@ block content
   +render_panel(3)
   .content
     .contacts 
-      form.contacts__form
+      form.contacts__form(data-aos="fade-up")
         label(for="name") Name
-        input(type="text", id="name", name="name")
+        input(type="text", id="name", name="name", class="form-input")
         label(for="email") Email
-        input(type="email", id="email", name="email")
+        input(type="email", id="email", name="email", class="form-input")
         label(for="message") Message
-        textarea(name="message", id="message") 
-        button(type="submit") Submit
-      .contacts__text
+        textarea(name="message", id="message", class="form-input")
+        div(class="wrap__btns")
+          button(type="submit") Submit
+          p(class="form-successful") Thank you! I will contact you soon
+      .contacts__text(data-aos="fade-up")
         h2 CONTACT FORM
         p You can send me your letter and i will answer you soon. For it you have to fill this form. It is totally free.
         p You don’t have to see the whole staircase, just take the first step. Good luck!
