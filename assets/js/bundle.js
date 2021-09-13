@@ -446,7 +446,7 @@ if (document.querySelector('.projects')) {
     element.classList.remove('aos-animate');
     setTimeout(function () {
       setLoading_1(false);
-      element.style.display = 'block';
+      element.style.display = 'flex';
       aos_1.default.init();
     }, 1000);
   });
@@ -550,7 +550,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64147" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57309" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -85,7 +85,7 @@ if (document.querySelector('.projects')) {
 
       setTimeout(() => {
         setLoading(false)
-        element.style.display = 'block';
+        element.style.display = 'flex';
         AOS.init();
       }, 1000);
     });
